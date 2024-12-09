@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TimeSync</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">TimeSync.</div>
+        <ul>
+            <li><a href="#sWatch">Stop Watch</a></li>
+            <li><a href="#aClock">Alarm Clock</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="content">
+            <h1>Welcome to <span class="logo">TimeSync</span>.</h1>
+            <p>Master Your Minute, Perfect Your Day</p>
+        </div>
+    
+        <!-- Feature Icons for Stopwatch and Alarm -->
+        <div class="container">
+            <!-- Clicking Stopwatch navigates to the Stopwatch Section -->
+            <div class="stopwatch" data-target="#sWatch">
+                <img src="StopWatch.png" alt="Stopwatch Icon">
+                <h2>Stopwatch</h2>
+            </div>
+    
+            <!-- Clicking Alarm navigates to the Alarm Section -->
+            <div class="alarm" data-target="#aClock">
+                <img src="Alarm.png" alt="Alarm Icon">
+                <h2>Alarm</h2>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stopwatch Section -->
+    <section class="stopwatch-sec" id="sWatch">
+        <h1><span>Stop</span>watch</h1>
+        <div class="stopwatch-container">
+            <div class="timeDisplay"> 
+                <h1>00:00:00</h1> 
+            </div>
+            <div class="buttons">
+                <button class="stop">Stop</button>
+                <button class="start">Start</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Alarm Clock Section -->
+    <section class="alarmclock" id="aClock">
+        <h1>Alarm <span>Clock</span></h1>
+        <div class="alarmclock-container">
+            <div class="alarm-timer">
+                <img src="sun.png" alt="Sun Icon">
+                <h2>No Alarm Set</h2>
+            </div>
+            <div class="alarm-setting">
+                <div class="clock" id="current-time"></div> 
+                <input type="time" id="alarm-time" value="00:00">
+                <div class="days">
+                    <button class="sun">Sun</button>
+                    <button class="sun">Mon</button>
+                    <button class="sun">Tue</button>
+                    <button class="sun">Wed</button>
+                    <button class="sun">Thu</button>
+                    <button class="sun">Fri</button>
+                    <button class="sun">Sat</button>
+                </div>
+                <div class="alarm-btns">
+                    <button class="set">Set Alarm</button>
+                    <button class="reset-alarm">Reset</button>
+                </div>
+            </div>
+        </div>
+        <audio src="alarm.mp3"></audio> 
+    </section>
+    
+
+    <!-- Link to the External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
